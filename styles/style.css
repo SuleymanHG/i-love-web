@@ -1,6 +1,6 @@
 @font-face{
     font-family:'font';
-    src: url(PixelFont-Regular.otf) format(OpenType); 
+    src: url(../fonts/PixelFont-Regular.otf) format(OpenType); 
 }
 
 body{
