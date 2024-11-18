@@ -1,0 +1,9 @@
+@font-face{
+    font-family:'font';
+    src: url(PixelFont-Regular.otf) format(OpenType); 
+}
+
+body{
+    font-family: 'font';
+
+}
