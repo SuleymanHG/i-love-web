@@ -4,21 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    
     <title>I love web</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="Over.html">Over mij</a></li>
-                <li><a href="learninglog.html">Learning log</a></li>
-                <li><a href="portfolio.html"></a>Portfolio</li>
-                <li><a href="skills.html"></a>Skills</li>
-            </ul>
+          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="menu" class="menu">
+            <li><a href="Over.html">Over mij</a></li>
+            <li><a href="learninglog.html">Learning log</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="skills.html">Skills</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
 
-    
+
+    <section class="grid-container">
+        <section class="content-box">
+          <img src="assets/suleyman_linkedin_foto.jpg" alt="suleyman profiel foto">
+          <h1>Süleyman Huzeyfe Gökgül</h1>
+          <p class="subtitle">Student FDND</p>
+          <p>Ik ben Süleyman Gökgül, een gemotiveerde student met een passie voor webdesign en digitale media. Met mijn werk streef ik naar creatieve oplossingen en impactvolle resultaten.</p>
+        </section>
+      </section>
+      
+
+
+
+
+
+        <section class="content-box">Content Box 2</section>
+        <section class="content-box">Content Box 3</section>
+      </section>
+      
+      
+      <script src="scripts/script.js"></script>
 </body>
 </html>
