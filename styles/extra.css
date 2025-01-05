@@ -1,0 +1,85 @@
+#rules div {
+    width: 16em;
+    height: 9.6em;
+    margin-left: -8em;
+    margin-top: -4.8em;
+    background: radial-gradient(circle, #555 50%, transparent 50.2%) .5em .4em / .8em .8em, radial-gradient(circle, #555 50%, transparent 50.2%) 1.3em .4em / .8em .8em, radial-gradient(circle, #555 50%, transparent 50.2%) 2.1em .4em / .8em .8em, linear-gradient(#333, #333) 0 0 / 100% 1.5em;
+    background-repeat: no-repeat;
+    border-radius: .6em;
+    box-shadow: 0 0 0 .1em rgba(255, 255, 255, 0.2), 0 1em 1.5em -.6em rgba(0, 0, 0, 0.7), 0 .6em .5em -.6em rgba(0, 0, 0, 0.5), 0 0 0 40em #9370db;
+}
+.entry div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.entry {
+    text-align: center;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+body {
+    line-height: 1;
+}
+:root {
+    --eight-w: 2vw;
+}
+#rules div::before {
+    width: 100%;
+    height: 500%;
+    left: .6em;
+    content: '$ the web rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules \A css rules \A html rules';
+    font-family: 'Courier New', mono;
+    color: #32cd32;
+    white-space: pre-wrap;
+    text-align: left;
+    line-height: 1.25;
+    animation-name: rulesText;
+}
+#rules div::before, #rules div::after {
+    top: 1.8125em;
+    animation: 7s infinite linear;
+    z-index: -1;
+}
+.entry div:before, .entry div:after {
+    display: block;
+    content: '';
+    position: absolute;
+}
+#rules div::after {
+    width: 24.599999999999998em;
+    height: 12.5em;
+    left: -14.399999999999999em;
+    background: linear-gradient(to top, #32cd32 .06em, transparent .06em) right 7.8em top 0 / .6em 1.25em, linear-gradient(#222, #222) right top / 8.4em 1.25em, linear-gradient(#222, #222) 0 2.5em / 7.8em 100%, linear-gradient(#222, #222) 7.8em 1.25em / 100% 100%;
+    background-repeat: no-repeat;
+    animation-name: rulesPrinting;
+}
+
+#rules div::before, #rules div::after {
+    top: 1.8125em;
+    animation: 7s infinite linear;
+    z-index: -1;
+}
+.entry div:before, .entry div:after {
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+
+
+
