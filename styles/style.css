@@ -266,6 +266,18 @@ img{
     text-decoration: underline;
 }
 
+/* Learning log section  */
+.learning-log h2{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.learning-log p:first-of-type{
+    font-size: 2em;
+    font-weight: 600;
+}
 
 
 /* Mobile-first: show menu for larger screens */
