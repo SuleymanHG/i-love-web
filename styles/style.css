@@ -148,13 +148,14 @@ a{
 }
   
 /* Hero section */
-section {
+.hero-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin-top: 3em;
+    margin-bottom: 4em;
     }
   
 
@@ -198,6 +199,7 @@ section {
     top: 17%;
     left: 48%;
     filter: blur(100px); 
+    overflow: hidden;
 }
 
 img{
@@ -214,6 +216,7 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    margin-bottom: 1.5em;
 }
 
 .see-all-projects img{
@@ -234,15 +237,34 @@ img{
 }
 
 /* Name logo */
-
 .name-logo p:first-child{
     font-family: 'Plus Jakarta Sans';
-    font-size: 5.5rem;
+    font-size: 4.2rem;
     font-weight:bolder;
     margin: 0px;
+    overflow:hidden;
+    margin-bottom: 1em;
 }
 
+/* About me section  */
+.about-me h2{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: 600;
+    font-style: italic;
+}
 
+.about-me p:first-of-type{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about-me p:nth-of-type(2){
+    font-size: 1em;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
 
 
 
