@@ -108,7 +108,7 @@ a{
 }
 
 
-/* Contact button code */
+/* Buttons code */
 .contact-button{
     width: 20%;
     color: var(--main-background-color);
@@ -125,6 +125,22 @@ a{
       }
 }
 
+.contact-button-red{
+    width: 20%;
+    color: var(--main-background-color);
+    background-color: var(--secondary-color);
+    width: 125px;
+    height: 55px;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+
+    &:visited {
+        color: var(--main-background-color); 
+        text-decoration: none;
+      }
+    
+}
 
 /* Hamburger menu styles */
 .hamburger {
@@ -172,6 +188,7 @@ a{
     color: var(--main-background-color);
 }
   
+/* Hero section */
 section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -181,6 +198,7 @@ section {
     margin-top: 3em;
     }
   
+
 /* Hero section title  */
 .title-home{ 
     grid-area: 1 / 1 / 2 / 2; 
@@ -228,6 +246,35 @@ img{
     border-radius: 20px;
     background-color: radialvar(--radial-color);
 }
+
+
+/* See all project sectıon  */
+.see-all-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.see-all-projects img{
+    width: 65%;
+    height: auto;
+    border: solid;
+    border-color: var(--dark-color);
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.see-all-projects a:first-of-type {
+    font-size: 1.25em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+
 
 
 /* Mobile-first: show menu for larger screens */
