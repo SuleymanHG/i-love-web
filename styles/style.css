@@ -15,9 +15,8 @@
     --radial-color:rgb(236, 37, 37, 0.75);
 
 }
-
 body {
-    margin: 2rem  ;
+
     background-color: var(--main-background-color);
     color: var(--primary-color);
     font-family: 'Poppins';
@@ -35,11 +34,20 @@ place-items: center center;
 
 svg{
     width: 40%;
+
+    @media (min-width: 768px) {
+          width: 20%;
+      }
 }
 
 nav{
     width:20%;
-}
+
+    @media (min-width: 768px) { 
+          width:60%;
+      }
+  }
+
 
 ul{
     display: flex;
@@ -112,6 +120,10 @@ a{
     border: none;
     cursor: pointer;
     padding: 0;
+
+    @media (min-width: 768px) {
+          display: none;
+    }
 }
 
 .hamburger .bar {
@@ -128,6 +140,11 @@ a{
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: 768px) {
+          display: flex;
+          flex-direction: row;
+      }
 }
 
 .menu li {
@@ -140,11 +157,16 @@ a{
     padding: 1rem;
     text-align: left;
     display: block;
-}
 
-.menu a:hover {
-    background-color: var(--primary-color);
-    color: var(--main-background-color);
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--main-background-color);
+  }
+
+    @media (min-width: 768px) {
+          padding: 0.5rem 1rem;
+          border: none;
+      }
 }
   
 /* Hero section */
@@ -335,40 +357,253 @@ img{
     text-align-last: right;
 }
 
-
-
-
-
-
-
-
-/* Mobile-first: show menu for larger screens */
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu a {
-        padding: 0.5rem 1rem;
-        border: none;
-    }
-    svg{
-        width: 20%;
-    }
-    
-    nav{
-        width:60%;
-    }
-}
-
 /* Toggle visibility */
 .menu.open {
     display: flex;
 }
 
+
+
+/* === LEARNING LOG === */
+.learning-log-page{
+  
+  .content-box{
+    color: var(--main-background-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+
+}
+
+
+/* === DIGITAL GARDEN === */
+.digital-garden{
+
+    *{
+        margin: 0;
+    }
+
+    /* === Notebook === */
+    .notebook-body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        height:50vh;
+        background-color:lightblue;
+      }
+      
+      .notebook-paper{
+        display:flex;
+        width:150px;
+        height:225px;
+        background-color:white;
+        border-radius:10px;
+        box-shadow: 12px 15px 50px -5px rgba(0,0,0,0.3);
+      }
+      
+      .notebook-top{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+        justify-content:center;
+        align-items:center;
+        width:12px;
+        height:100%;
+        background-color:#F7C33D;
+        border-radius:10px 0px 0px 10px;
+        z-index:1;
+      }
+      
+      .dots{
+        width:5px;
+        height:5px;
+        background-color:lightblue;
+        border-radius:100%;
+        border:3px solid darkgoldenrod;
+      }
+      
+      .notebook-redline{
+        height:100%;
+        width:2px;
+        background-color:red;
+        z-index:1;
+        margin-left:30px;
+      }
+      
+      .all-lines{
+        display:flex;
+        position:absolute;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:30px;
+        width:150px;
+      }
+      
+      .lines{
+        width:100%;
+        height:2px;
+        background-color:rgb(76,172,249,0.7);
+        margin:9.8px;
+      } 
+
+
+    /* === ICE CREAM ===*/
+      .ice-cream-body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height: 50vh;
+        background-color:#FFD44F;
+      }
+      
+      .content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+      
+      }
+      .ice-cream-base{
+        background-color:#F389B8;
+        width: 150px;
+        height:250px;
+        border-radius: 150px 150px 30px  30px;
+
+        &::after{
+            content:"";
+            width: 100px;
+            height: 100px;
+            background-color: #000000;
+
+        }
+      }
+
+
+      .stick{
+        width:50px;
+        height:75px;
+        background-color:#ECA97C;
+        border-top: 20px solid #DC9E73;
+        border-radius: 0px 0px 50px 50px
+      }
+
+
+      /* === 80s TV === */
+      .tv-body{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:#FAEDD3;
+      }
+      
+      .tv-main{
+        width:700px;
+        height:400px;
+        background-color:#535257;
+        border: 7px solid;
+        border-color:#A6A8AC;
+        border-radius: 10px;  
+        display:flex;
+        align-items:center;
+      }
+      
+      .screen-outside{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:480px;
+        height:350px;
+        margin-left:30px;
+        border: 2px solid grey;
+        border-radius:10px;
+      }
+      
+      .tv-screen {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:400px;
+        height:250px;
+        clip-path: ellipse(50% 99%);
+        background: black;
+      }
+      
+      
+      .inside-tv-screen{
+        width:430px;
+        height: 290px;
+        clip-path: ellipse(99% 50%);
+        background: #DAE8BC;
+        box-shadow: inset 20px 30px 50px rgba(0, 0, 0, 0.5);
+        
+      }
+      
+      .tv-bottom {
+        display: grid;
+        position: relative;
+        width: 630px;
+        height: 0;
+        background: rgba(0,0,0,0.0);
+        border-top: 50px solid #535257;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        
+      }
+      
+      
+      
+      .tv-bottom-stand{
+        width: 620px;
+        height: 25px;
+        background-color:#535257;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+      }
+      
+      .tv-bottom-details{
+        bottom:-20px;
+        width:25px;
+        height:5px;
+        background-color: #535257;
+        transform:translateY(-40px);
+        box-shadow: inset 1px 1px 5px 0px #000000, 0px 0px 5px 5px rgba(0,0,0,0);
+        border-radius:15%;
+      }
+      
+      .bottom-details-first-row{
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0px 5px 5px 5px;
+        
+        
+      }
+      
+      .bottom-details-second-row{
+        display: grid;
+      grid-template-columns: repeat(21, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+        margin: 0px 10px 5px 10px;
+        
+      }
+      
+      .bottom-details-third-row{
+        display: grid;
+      grid-template-columns: repeat(21, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+        margin: 0px 15px 5px 15px;
+      }
+      
+}
 
