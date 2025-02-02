@@ -508,50 +508,50 @@ img{
             margin-left: 0.5rem;
         }
     }
-    /* === CALL TO ACTION SECTION === */
-    .calll-to-action{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: var(--primary-color);
-        border-radius: var(--border-radius);
-        padding: 2rem 0 0 0;
-
-        h2{
-            color: var(--section-colors);
-            text-decoration: none;
-            font-style: normal;
-            font-size: var(--font-xl);
-        }
-
-        a{
-            color:var(--section-colors);
-            text-decoration: underline;
-            font-weight: 600;
-            padding: 0 0 1.5rem 0;
-        }
-
-        input[type=email]{
-            background-color: var(--form-input-background);
-            border-style: none;
-            padding:0.6rem 2rem 0.6rem 2rem;
-            border-radius: var(--border-radius);
-            color: var(--section-colors);
-
-            &::placeholder{
-                color: var(--form-input-color);
-            }
-        }
-
-        button{
-            margin: 1.5rem 0 1.5rem 0;
-        }
-
-    }
 }
 
+/* === CALL TO ACTION SECTION === */
+.calll-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 2rem 0 0 0;
+
+    h2{
+        color: var(--section-colors);
+        text-decoration: none;
+        font-style: normal;
+        font-size: var(--font-xl);
+    }
+
+    a{
+        color:var(--section-colors);
+        text-decoration: underline;
+        font-weight: 600;
+        padding: 0 0 1.5rem 0;
+    }
+
+    input[type=email]{
+        background-color: var(--form-input-background);
+        border-style: none;
+        padding:0.6rem 2rem 0.6rem 2rem;
+        border-radius: var(--border-radius);
+        color: var(--section-colors);
+
+        &::placeholder{
+            color: var(--form-input-color);
+        }
+    }
+
+    button{
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+}
 
 
 
