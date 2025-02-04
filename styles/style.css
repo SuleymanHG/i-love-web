@@ -143,64 +143,7 @@ a{
 }
 
 /* Hamburger menu styles */
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
 
-    @media (min-width: 768px) {
-          display: none;
-    }
-}
-
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: var(--dark-color);
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-
-.menu {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    @media (min-width: 768px) {
-          display: flex;
-          flex-direction: row;
-      }
-}
-
-.menu li {
-    margin: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: var(--padding);
-    text-align: left;
-    display: block;
-
-    &:hover {
-      background-color: var(--primary-color);
-      color: var(--main-background-color);
-  }
-
-    @media (min-width: 768px) {
-          padding: 0.5rem 1rem;
-          border: none;
-      }
-}
   
 /* Hero section */
 .hero-section {
@@ -520,6 +463,7 @@ img{
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     padding: 2rem 0 0 0;
+    margin-bottom: var(--margin);
 
     h2{
         color: var(--section-colors);
@@ -538,7 +482,7 @@ img{
     input[type=email]{
         background-color: var(--form-input-background);
         border-style: none;
-        padding:0.6rem 2rem 0.6rem 2rem;
+        padding:1rem 5rem 1rem 5rem;
         border-radius: var(--border-radius);
         color: var(--section-colors);
 
@@ -553,15 +497,49 @@ img{
 
 }
 
+/* === NAVIGATION FOOTER === */
 
+footer{
+    h2{
+        color: var(--primary-color);
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+    }
 
+    .navigation-footer, .languages-footer{
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap:  wrap;
+            justify-content:left;
+            padding-left: 0;
+        }
+    }
+    
+    .contact-footer,.location-footer{
+        ul{
+            display:flex;
+            flex-direction: column; 
+            padding-left: 0;
+        }
+    
+        li{
+            text-align:left;
+        }
+    }    
 
-
-
-/* Toggle visibility */
-.menu.open {
-    display: flex;
+    svg{
+        margin-top: 1rem;
+        min-width: 300px;
+        max-width: 400px;
+        height: auto;
+    }
 }
+
+
+
 
 
 
