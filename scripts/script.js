@@ -1,9 +1,10 @@
 
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('#menu');
+let hamMenu = document.querySelector('.ham-menu');
+let hamItems = document.querySelector('.ham-items');
 
-hamburger.addEventListener('click', () => {
-  const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-  hamburger.setAttribute('aria-expanded', !isExpanded);
-  menu.classList.toggle('open');
-});
+hamMenu.addEventListener('click', openMenu)
+
+function openMenu(){
+    hamMenu.classList.toggle('active')
+    hamItems.classList.toggle('active')
+}
