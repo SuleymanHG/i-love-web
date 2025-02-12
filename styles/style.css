@@ -131,12 +131,8 @@ header {
     }
 
     svg {
-        width: 80%;
+        width: 100%;
         grid-area: 1 / 1 / 2 / 2;
-
-        @media (min-width: 768px) {
-            width: 100%;
-        }
     }
 
     li {
@@ -145,8 +141,8 @@ header {
 
     .button-dark{
         grid-area: 1 / 2 / 2 / 3;
-        justify-self: end;
-        margin-right: 2.5rem;
+        justify-self: end;  
+        margin: 0 0.5rem 0 1rem ;
     }
 
     /* Hamburger menu styles */
@@ -157,9 +153,8 @@ header {
         position: relative;
         z-index: 2;
         cursor: pointer;
-        background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-        border-radius: 10px;
+        border:none;
+        background-color: var(--main-background-color);
 
         
 
@@ -167,7 +162,7 @@ header {
             height: 0.3em;
             width: 60%;
             border-radius: 10px;
-            background-color: var(--main-background-color);
+            background-color: var(--primary-color);
             position: absolute;
             top: 50%;
             left: 50%;
