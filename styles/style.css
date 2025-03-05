@@ -368,17 +368,6 @@ header {
         gap: 1em;
         margin-bottom: 1.5em;
 
-        @media (min-width:640px){
-
-        }
-
-        @media (min-width:768px){
-            
-        }
-
-        @media (min-width:1024px){
-            
-        }
 
         img {
             width: 200px;
@@ -387,18 +376,6 @@ header {
             border-color: var(--dark-color);
             border-radius: var(--border-radius);
             padding: 15px;
-
-            @media (min-width:640px){
-                
-            }
-    
-            @media (min-width:768px){
-                
-            }
-    
-            @media (min-width:1024px){
-                
-            }
         }
 
         a:first-of-type {
@@ -413,17 +390,27 @@ header {
 
 /* Name logo */
 .name-logo {
-
     margin: 0 -2.3rem 0 -2.3rem;
 
 
     p:first-child {
         font-family: 'Plus Jakarta Sans';
-        font-size: 4.2rem;
+        font-size: 4.5rem;
         font-weight: bolder;
         margin: 0px;
         overflow: hidden;
         margin-bottom: 1em;
+
+        @media (min-width:768px){
+            font-size: 9.2rem;
+            
+        }
+
+        @media (min-width:1024px){
+            font-size: 17rem;
+        }
+
+
     }
 }
 /* About me section  */
