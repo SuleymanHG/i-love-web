@@ -251,7 +251,7 @@ header {
         justify-content: center;
         align-items: center;
     }
-    
+
     /* Hero section */
     .hero-section {
         display: grid;
@@ -412,15 +412,20 @@ header {
 }
 
 /* Name logo */
-.name-logo p:first-child {
-    font-family: 'Plus Jakarta Sans';
-    font-size: 4.2rem;
-    font-weight: bolder;
-    margin: 0px;
-    overflow: hidden;
-    margin-bottom: 1em;
-}
+.name-logo {
 
+    margin: 0 -2.3rem 0 -2.3rem;
+
+
+    p:first-child {
+        font-family: 'Plus Jakarta Sans';
+        font-size: 4.2rem;
+        font-weight: bolder;
+        margin: 0px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+}
 /* About me section  */
 .about-me {
     margin-bottom: var(--margin);
