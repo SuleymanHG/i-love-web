@@ -395,22 +395,11 @@ header {
 
     p:first-child {
         font-family: 'Plus Jakarta Sans';
-        font-size: 4.5rem;
+        font-size: clamp(72px, 19.5vw, 272px);
         font-weight: bolder;
         margin: 0px;
         overflow: hidden;
         margin-bottom: 1em;
-
-        @media (min-width:768px){
-            font-size: 9.2rem;
-            
-        }
-
-        @media (min-width:1024px){
-            font-size: 17rem;
-        }
-
-
     }
 }
 /* About me section  */
