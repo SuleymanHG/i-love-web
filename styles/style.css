@@ -87,12 +87,6 @@ ul {
 
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-    background-color: radialvar(--radial-color);
-}
 
 /* Buttons code */
 .button-dark {
@@ -492,6 +486,13 @@ header {
         font-weight: 600;
     }
 
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+        background-color: radialvar(--radial-color);
+    }
+    
     .works-highlight {
         display: flex;
         flex-direction: column;
