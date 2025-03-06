@@ -1,4 +1,4 @@
-
+//  === Hamburger menu code
 let hamMenu = document.querySelector('.ham-menu');
 let hamItems = document.querySelector('.ham-items');
 
@@ -8,3 +8,4 @@ function openMenu(){
     hamMenu.classList.toggle('active')
     hamItems.classList.toggle('active')
 }
+
