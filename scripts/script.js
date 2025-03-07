@@ -13,13 +13,22 @@ function openMenu(){
 let scrollContainer = document.getElementById('scroll-container');
 let scrollLeftBtn = document.getElementById('scroll-left');
 let scrollRightBtn = document.getElementById('scroll-right');
-
-let scrollAmount = 200;
+let scrollAmount = 300;
 
 scrollLeftBtn.addEventListener('click', () => {
-  scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  if (scrollContainer.scrollLeft === 0) {
+    let maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    scrollContainer.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+  } else {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
 });
 
 scrollRightBtn.addEventListener('click', () => {
-  scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  let maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+  if (scrollContainer.scrollLeft >= maxScrollLeft - 10) {
+    scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
 });
