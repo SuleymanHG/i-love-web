@@ -341,36 +341,35 @@ header {
                 color: var(--secondary-color);
             }
         }
+
+        /* Hero section image */
+        .hero-image {
+            justify-self: center;
+            grid-area: 1 / 2 / 3 / 3;
+            width: clamp(200px, 20vw, 310px);            
+            object-fit: cover;
+            object-position: top;
+            border-radius: var(--border-radius);
+            z-index: -1;
+            filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
+
+            @media (min-width: 640px) {
+                filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
+            }
+
+            @media (min-width:768px) {
+                filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
+            }
+
+            @media (min-width: 1024px) {
+                filter: drop-shadow(10px 10px 50px rgb(236, 37, 37, 0.75));
+            }
+
+
+        }
     }
 
-    /* Hero section image */
-    .hero-image {
-        justify-self: center;
-        grid-area: 1 / 2 / 3 / 3;
-        max-height: 470px;
-        min-height: 300px;
-        min-width: 150px;
-        max-width: 310px;
-        object-fit: cover;
-        object-position: top;
-        border-radius: var(--border-radius);
-        z-index: -1;
-        filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
 
-        @media (min-width: 640px) {
-            filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
-        }
-
-        @media (min-width:768px) {
-            filter: drop-shadow(5px 5px 50px rgb(236, 37, 37, 0.75));
-        }
-
-        @media (min-width: 1024px) {
-            filter: drop-shadow(10px 10px 50px rgb(236, 37, 37, 0.75));
-        }
-
-
-    }
 
     /* See all project sectıon  */
     .see-all-projects {
