@@ -480,6 +480,7 @@ header {
         display: flex;
         gap: 1rem;  
         overflow-x: auto; 
+        scrollbar-width: none;
 
         article {
             display: grid;
@@ -492,10 +493,10 @@ header {
             border-radius: var(--border-radius);
             color: var(--main-background-color);
             padding: var(--padding-sections);
-            margin-bottom: var(--margin);
             aspect-ratio: 1/1;
             flex: 0 0 auto;    
-            width: clamp(210px, 50vw,350px);          
+            width: clamp(210px, 50vw,350px);  
+            margin-bottom: 1rem;        
 
 
         }
@@ -535,6 +536,23 @@ header {
         }
 
     }
+
+    .scroll-btn-left, .scroll-btn-right{
+        border-radius: 50%;
+        border: 1px solid var(--primary-color);
+        padding: 17px 22.33px;
+        margin-bottom: var(--margin);
+
+        &:hover{
+            background-color: var(--primary-color);
+            
+            svg{
+                fill: var(--main-background-color);
+            }
+        }
+    }
+
+    
 
 }
 
