@@ -484,8 +484,8 @@ header {
 
         article {
             display: grid;
-            grid-template-columns: 2;
-            grid-template-rows: 3;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3,1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             align-items: center;
@@ -493,12 +493,14 @@ header {
             border-radius: var(--border-radius);
             color: var(--main-background-color);
             padding: var(--padding-sections);
-            aspect-ratio: 1/1;
             flex: 0 0 auto;    
             width: clamp(210px, 50vw,350px);  
+            height: clamp(210px, 50vw,350px); 
             margin-bottom: 1rem;        
 
-
+            @media (min-width:640px){
+                grid-template-rows: repeat(3,0.25fr);
+            }
         }
 
         h3 {
