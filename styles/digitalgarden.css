@@ -224,6 +224,28 @@ body{
       grid-row-gap: 0px;
         margin: 0px 15px 5px 15px;
       }
+
+
+
       
 }
 
+
+.progressive-enhancement-workshop{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+  width:100vw;
+}
+
+h1{
+  font-size:5rem;
+  max-width:40%;
+  text-align:center;  
+  font-family:sans-serif;
+  background: linear-gradient( to left,#050542, #4741eb);
+  background-clip: text;
+  color: transparent;
+  z-index: 100;
+}
