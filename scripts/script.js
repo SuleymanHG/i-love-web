@@ -32,3 +32,6 @@ scrollRightBtn.addEventListener('click', () => {
     scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   }
 });
+
+
+

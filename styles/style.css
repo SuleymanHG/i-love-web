@@ -620,11 +620,27 @@ header {
             grid-area: 2 / 1 / 3 / 2;
         }
 
-        p:nth-of-type(2) {
+        
+        p:nth-of-type(3) {
+            display: none;
             color: var(--main-background-color);
             font-size: var(--font-sm);
             grid-area: 2 / 2 / 3 / 3;
             text-align-last: right;
+        }
+
+        p:nth-of-type(4) {
+            display: none;
+            color: var(--main-background-color);
+            font-size: var(--font-sm);
+            grid-area: 2 / 2 / 3 / 3;
+            text-align-last: right;
+        }
+
+        @media (min-width:800px){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
         }
     }
 
@@ -806,3 +822,6 @@ footer {
     }
 
 }
+
+
+
