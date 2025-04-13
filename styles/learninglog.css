@@ -1,0 +1,17 @@
+
+/* === LEARNING LOG PAGE === */
+.learning-log-page {
+
+    .content-box {
+        color: var(--main-background-color);
+        background-color: var(--primary-color);
+        padding: 10px;
+        margin: 10px 20px 10px 20px;
+        border-radius: 20px;
+    }
+
+    a {
+        color: var(--main-background-color);
+    }
+
+}
