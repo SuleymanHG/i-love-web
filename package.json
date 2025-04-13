@@ -1,0 +1,30 @@
+{
+  "name": "portfoliosuleyman",
+  "version": "1.0.0",
+  "description": "Dit is mijn I love web",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/SuleymanHG/i-love-web#readme",
+  "bugs": {
+    "url": "https://github.com/SuleymanHG/i-love-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuleymanHG/i-love-web.git"
+  },
+  "license": "ISC",
+  "author": "Süleyman Huzeyfe Gökgül",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm start"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0"
+  }
+}
