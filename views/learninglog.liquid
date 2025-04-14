@@ -1,0 +1,17 @@
+<h1>Learning Logs</h1>
+
+{% for log in logs %}
+  <section>
+    <h2>{{ log.h1 }}</h2>
+    <p><strong>Date:</strong> {{ log.date }}</p>
+    <p>{{ log.content }}</p>
+
+    {% if log.list_items %}
+      <ul>
+        {% for item in log.list_items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
+{% endfor %}
